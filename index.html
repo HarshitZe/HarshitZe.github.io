@@ -3,30 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Analyst Portfolio</title>
+    <title>Data Analyst Portfolio - Harshit</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-        body { font-family: 'Montserrat', sans-serif; }
-        /* Inline CSS for simplicity */
-    </style>
 </head>
 <body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
     <header id="hero">
-        <!-- Hero Section -->
+        <div class="fade-in">
+            <h1>Hi, I'm Harshit</h1>
+            <p>Data Analyst | Python | SQL | Power BI</p>
+            <a href="#contact" class="btn">Get In Touch</a>
+        </div>
     </header>
-    <section id="about">
-        <!-- About Me Section -->
+
+    <!-- About Section -->
+    <section id="about" class="fade-in">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I'm a passionate Data Analyst from Uttarakhand, India, specializing in data analytics, Python programming, and creating insightful dashboards. I turn raw data into actionable insights.</p>
+        </div>
     </section>
-    <section id="skills">
-        <!-- Skills Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="fade-in">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <i class="fas fa-code"></i>
+                    <h3>Programming</h3>
+                    <p>Python, SQL, R</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-chart-bar"></i>
+                    <h3>Tools</h3>
+                    <p>Power BI, Excel, Tableau</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-database"></i>
+                    <h3>Analysis</h3>
+                    <p>Data Cleaning, Visualization, Modeling</p>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="projects">
-        <!-- Projects Section -->
+
+    <!-- Projects Section -->
+    <section id="projects" class="fade-in">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Sales Dashboard</h3>
+                    <p>Interactive Power BI dashboard analyzing sales trends and customer behavior.</p>
+                    <span class="tech-tag">Power BI</span>
+                    <span class="tech-tag">Python</span>
+                </div>
+                <div class="project-card">
+                    <h3>Customer Analytics</h3>
+                    <p>Python-based analysis using pandas to segment customers and predict churn.</p>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">SQL</span>
+                </div>
+                <div class="project-card">
+                    <h3>Financial Report</h3>
+                    <p>Automated financial reporting system with Excel and Python integration.</p>
+                    <span class="tech-tag">Excel</span>
+                    <span class="tech-tag">Python</span>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="contact">
-        <!-- Contact Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="fade-in">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>Let's connect and discuss data-driven solutions!</p>
+            <div class="social-links">
+                <a href="https://github.com/HarshitZe" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/harsh-da" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:harsharya129@example.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
     </section>
 
     <script src="script.js"></script>
