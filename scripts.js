@@ -1,16 +1,13 @@
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-    const name = document.querySelector('input[name="name"]').value;
-    const email = document.querySelector('input[name="email"]').value;
-    const message = document.querySelector('textarea[name="message"]').value;
-
-    fetch('/send-message', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ name, email, message })
-    }).then(response => response.text())
-      .then(result => alert(result))
-      .catch(error => console.error('Error:', error));
+document.addEventListener('DOMContentLoaded', function() {
+    const sections = document.querySelectorAll('section');
+    let currentSectionIndex = 0;
+    window.addEventListener('scroll', () => {
+        sections.forEach((sec, i) => {
+            if (window.pageYOffset >= sec.offsetTop - 100 && window.pageYOffset < sec.offsetTop + sec.offsetHeight) {
+                document.querySelectorAll('nav ul li')[i].classList.add('active');
+            } else {
+                document.querySelectorAll('nav ul li')[i].classList.remove('active');
+            }
+        });
+    });
 });
